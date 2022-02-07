@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/purple"
+       android:layout_marginTop="@dimen/dimen_10">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:layout_margin="@dimen/dimen_2"
+           android:elevation="4dp"
+           android:orientation="vertical"
+           android:padding="16dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="@dimen/dimen_150"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/dimen_5"
+                   android:text="SHG Name "
+                   android:textSize="@dimen/dimen_15" />
+
+               <TextView
+                   android:id="@+id/cardViewSelectShgName"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/dimen_5"
+                   android:text="XXXXXX"
+                   android:textSize="@dimen/dimen_15" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="@dimen/dimen_150"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:padding="@dimen/dimen_5"
+                   android:text="SHG Code "
+                   android:textSize="@dimen/dimen_15" />
+
+               <TextView
+                   android:id="@+id/cardViewSelectShgCode"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:padding="@dimen/dimen_5"
+                   android:text="XXXXXX"
+                   android:textSize="@dimen/dimen_15"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="@dimen/dimen_150"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:padding="@dimen/dimen_5"
+                   android:text="@string/mobile_number"
+                   android:textSize="@dimen/dimen_15" />
+
+               <TextView
+                   android:id="@+id/cardViewSelectShgMobile"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:padding="@dimen/dimen_5"
+                   android:text="XXXXXX"
+                   android:textSize="@dimen/dimen_15" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:visibility="gone"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="@dimen/dimen_150"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:padding="@dimen/dimen_5"
+                   android:text="SHG Reg Id"
+                   android:textSize="@dimen/dimen_15" />
+
+               <TextView
+                   android:id="@+id/cardViewSelectShgRegId"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:padding="@dimen/dimen_5"
+                   android:text="XXXXXX"
+                   android:textSize="@dimen/dimen_15" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="@dimen/dimen_150"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:padding="@dimen/dimen_5"
+                   android:text="Stall Number "
+                   android:textSize="@dimen/dimen_15" />
+
+               <TextView
+                   android:id="@+id/cardViewSelectStallNumber"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:padding="@dimen/dimen_5"
+                   android:text="XXXXXX"
+                   android:textSize="@dimen/dimen_15"/>
+           </LinearLayout>
+
+       </LinearLayout>
+   </androidx.cardview.widget.CardView>
+
+</LinearLayout>

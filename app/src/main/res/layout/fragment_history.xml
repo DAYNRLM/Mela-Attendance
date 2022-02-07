@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.melaAttendance.fragments.HistoryFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_layout"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rounded"
+                android:layout_margin="@dimen/dimen_5"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/history_today"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From Beginning "
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dimen_5"
+                android:textColor="@color/white"
+
+                android:textStyle="bold"
+                android:background="@drawable/shape_rounded"
+                android:id="@+id/from_beginning"
+                android:layout_alignParentRight="true"
+
+
+                />
+
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/history_fragment_framlayout"
+            android:visibility="gone">
+        </FrameLayout>
+        <!--       <android.support.v4.widget.SwipeRefreshLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/pullToRefresh">-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shg_history_recycler"
+            android:layout_below="@+id/button_layout"
+            android:layout_marginTop="@dimen/dimen_10"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:padding="@dimen/dimen_30"
+            android:id="@+id/no_history_layout"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:textColor="@color/purple"
+                android:text="@string/no_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_large"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:textColor="@color/purple"
+            android:text="mmmm"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/show_MsgTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Mela Attendance</string>
+
+    <string name="productDetail">Product Detail</string>
+    <string name="next">next</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="verification">We sent you an One Time Password (OTP) on your mobile number</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="date_formate_caps">yyyy-MM-dd</string>
+    <string name="date_formate_small">dd-MMM-yyyy</string>
+    <string name="no_history">No History Found?</string>
+    <string name="bill_no">Bill No</string>
+    <string name="shg_id">SHG Id</string>
+    <string name="shg_name">Name</string>
+    <string name="mobile_number">Mobile</string>
+    <string name="attedence_type">Select the attendance type</string>
+    <string name="bill_date">Bill Date</string>
+    <string name="bill_time">Bill Time</string>
+    <string name="product_details">PRODUCT DETAILS</string>
+    <string name="total_bill">Total Bill</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_qty">Quantity</string>
+    <string name="product_unit_price">Unit Price</string>
+    <string name="GPSAlertDialogTitle">GPSAlertDialogTitle</string>
+    <string name="GPSAlertDialogMessage">GPSAlertDialogMessage</string>
+    <string name="action_settings">action_settings</string>
+    <string name="cancel">CANCEL</string>
+    <string name="delete_bill">DELETE BILL</string>
+    <string name="shg_code">Mobile</string>
+    <string name="in_time">In Time</string>
+    <string name="out_time">Out Time</string>
+    <string name="in_location">In Location</string>
+    <string name="out_location">Out Location</string>
+    <string name="select_date">Select date</string>
+    <string name="select_Attedence">Attendance</string>
+    <string name="select_SHG">Select SHG</string>
+    <string name="no_internet_text">No Internet!</string>
+    <string name="forgot_pin">Forgot Mpin</string>
+    <string name="generated_date">Genrated date</string>
+    <string name="created_date">Genrated date</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bottom_text">Design, hosted and maintained by NIC,Content provided by MORD.</string>
+    //New added by manish
+    <string name="alert">Alert!</string>
+    <string name="mela_close_msg">Mela has been closed.</string>
+    <string name="update_application_title">Update Your Application</string>
+    <string name="update_application_msg">You are using older version please update your application...</string>
+    <string name="type_shg_name">Type SHG name</string>
+    <string name="login">Login</string>
+
+</resources>

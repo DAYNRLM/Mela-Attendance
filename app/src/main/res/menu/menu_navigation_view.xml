@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+     <!--   <item
+            android:id="@+id/menu_Home"
+            android:title="Home"
+            android:icon="@drawable/ic_home_black_30dp"/>-->
+   <!--     <item
+            android:id="@+id/menu_profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_person_black_24dp"/>-->
+<!--        <item
+            android:id="@+id/menu_SelectShg"
+            android:title="Switch SHG"
+            android:icon="@drawable/ic_repeat_one_black_24dp"/>-->
+<!--        <item
+            android:id="@+id/menu_attendance"
+            android:title="Attendance"
+            android:icon="@drawable/ic_attendanceblack_24dp"/>-->
+    <!--    <item
+            android:id="@+id/menu_history"
+            android:title="Sale History"
+            android:icon="@drawable/ic_history_black_24dp"/>
+-->
+           <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_30dp"/>
+        <item
+            android:id="@+id/menu_contact_us"
+            android:title="Contact Us"
+            android:icon="@drawable/ic_contact_phone_black_24dp"/>
+
+        <item
+            android:id="@+id/menu_About_us"
+            android:title="About Us"
+            android:icon="@drawable/ic_about_black_24dp"/>
+
+        <item
+            android:id="@+id/menu_logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+    </group>
+</menu>

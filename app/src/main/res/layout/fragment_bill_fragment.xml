@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Bill_fragment">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/space20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bill Invoice "
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:background="@color/purple"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@android:color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="4dp"
+                    android:text="Invoice Number :-"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Created Date :-"
+
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Genrated Date :-"
+
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Stall No :-"
+
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+                    android:text="SHG Code :-"
+                    android:textSize="20sp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+                    android:text="SHG Name :-"
+                    android:textSize="20sp"
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_weight="1"
+
+                >
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="XXXX"
+                    android:textSize="20dp"
+                    android:id="@+id/bill_nosTV"
+                    android:layout_marginTop="4dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/genrate_datebill"
+                    android:layout_marginTop="15dp"
+
+                    android:text="XXXX"
+                    android:textSize="20dp"
+
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/create_datebill"
+                    android:layout_marginTop="15dp"
+
+                    android:text="XXXX"
+                    android:textSize="20dp"
+
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stall_nosTV"
+                    android:layout_marginTop="15dp"
+
+                    android:text="XXXX"
+                    android:textSize="20dp"
+
+                android:gravity="right"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shg_codesTV"
+
+                    android:text="XXXX"
+                    android:textSize="20dp"
+                    android:gravity="right"
+                    android:layout_marginTop="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shg_nameTVBill"
+
+                    android:text="XXXX"
+                    android:textSize="12dp"
+                    android:gravity="right"
+
+                    android:layout_marginTop="@dimen/dimen_25"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="6dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginRight="@dimen/space10dp"
+            android:layout_marginLeft="@dimen/space10dp"
+
+            android:id="@+id/priceListLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Total Price"
+                android:layout_weight="1"/>
+            <TextView
+
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Delete"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill_recyclerview"
+            android:layout_marginLeft="@dimen/space10dp"
+            android:layout_marginRight="@dimen/space10dp"
+            android:padding="@dimen/space5dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="@dimen/space1dp"
+
+
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/space30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount :-"
+            android:textSize="18sp"
+            android:textColor="#000000"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/total_amountTV"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:text="xxxxxxxxx"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

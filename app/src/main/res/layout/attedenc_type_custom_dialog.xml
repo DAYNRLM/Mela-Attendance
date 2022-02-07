@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/dimen_400"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/attedence_type"
+        android:textSize="@dimen/textSize25"
+        android:padding="@dimen/dimen_5"
+        android:background="@color/purple"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectAttedenceRV"
+        android:layout_margin="@dimen/dimen_10"
+        android:padding="@dimen/dimen_5"/>
+
+</LinearLayout>

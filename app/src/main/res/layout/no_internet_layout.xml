@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/nointernet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/noimage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/nofav"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/antenna" />
+
+        <TextView
+            android:id="@+id/nofav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="No Internet Connection"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noimage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+
+            android:gravity="center"
+            android:text="Make sure your WIFI or Cellular mobile data is turned ON and try again."
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/retryButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Retry"
+            android:textColor="@drawable/antenna"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

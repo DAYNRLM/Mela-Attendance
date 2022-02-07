@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OTPverification">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aajeevika"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP Verification"
+            android:layout_marginTop="@dimen/space30dp"
+            android:textSize="@dimen/textSize30"
+            android:textStyle="bold"
+            android:textColor="@color/color_35373c"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize20"
+            android:padding="@dimen/space2dp"
+            android:layout_marginTop="@dimen/space20dp"
+            android:layout_marginLeft="@dimen/space10dp"
+            android:layout_marginRight="@dimen/space10dp"
+            android:text="@string/verification"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Enter OTP"
+            android:layout_marginTop="@dimen/space10dp"
+            android:textSize="@dimen/textSize20"/>
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:id="@+id/enter_otpET"
+            android:inputType="number"
+            android:textColor="@color/color_35373c"
+            android:layout_marginTop="@dimen/space10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGetOtp"
+            android:layout_marginTop="@dimen/space30dp"
+            android:text="Verify  Otp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize18"
+            android:layout_marginLeft="@dimen/space5dp"
+            android:layout_marginRight="@dimen/space5dp"
+            android:padding="@dimen/space5dp"
+            android:background="@color/purple"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.melaAttendance.activity.AttendanceActivity">
+<!--   <androidx.appcompat.widget.Toolbar
+       android:layout_width="match_parent"
+       android:id="@+id/attendanceTB"
+       android:background="@color/purple"
+       android:layout_height="@dimen/dimen_50">
+
+   </androidx.appcompat.widget.Toolbar>-->
+<!--    <include-->
+<!--        layout="@layout/toolbar_for_activity"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_left_white_24dp"
+            android:padding="@dimen/space15dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvSelectLanguage"
+            style="@style/tv_large_style"
+            android:layout_toRightOf="@+id/imgBack"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:text="@string/select_Attedence"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/textSize18" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pictureIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/space10dp"
+                android:layout_gravity="center_horizontal"
+                 />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/take_pictureBtn"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/space10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/purple"
+                android:textColor="@color/white"
+                android:text="take photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:id="@+id/tvAttendenceDate"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/textSize18"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_5"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shg_detailsCV"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:padding="@dimen/dimen_30"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title1"
+                    android:text="Details"
+                    android:textSize="@dimen/text_size_large"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    />
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/dimen_2"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/view1"
+                    android:background="@color/purple"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_below="@+id/title1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view1"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_30"
+                        android:layout_weight=".3"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dimen_10">
+
+                        <TextView
+                            android:id="@+id/shg_namesTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shg_name"
+                            android:textSize="@dimen/text_size_large" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_30"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/shg_nameTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dimen_10"
+                            android:text="@string/shg_name"
+                            android:textSize="@dimen/text_size_large" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/opening_detailsCV"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:padding="@dimen/dimen_30"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title2"
+                    android:text="Opening Details"
+                    android:textSize="@dimen/text_size_large"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    />
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/dimen_2"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/view2"
+                    android:background="@color/purple"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_below="@+id/title2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view2"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_30"
+                        android:layout_weight=".3"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dimen_10">
+
+                        <TextView
+                            android:id="@+id/in_timesTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/in_time"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <TextView
+                            android:id="@+id/in_locationsTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/bill_nosTV"
+                            android:layout_marginTop="@dimen/dimen_10"
+                            android:text="@string/in_location"
+                            android:textSize="@dimen/text_size_large" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_30"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/in_timeTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dimen_10"
+                            android:text="@string/in_time"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <TextView
+                            android:id="@+id/in_locationTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/bill_noTV"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/dimen_10"
+                            android:layout_marginRight="@dimen/dimen_10"
+                            android:text="@string/in_location"
+                            android:textSize="@dimen/text_size_large" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/closing_detailsCV"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:padding="@dimen/dimen_30"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title3"
+                    android:text="Closing Details"
+                    android:textSize="@dimen/text_size_large"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    />
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/dimen_2"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/view3"
+                    android:background="@color/purple"
+                    android:layout_marginTop="@dimen/dimen_5"
+
+                    android:layout_below="@+id/title3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view3"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_30"
+                        android:layout_weight=".3"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dimen_10">
+
+                        <TextView
+                            android:id="@+id/out_timesTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/out_time"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <TextView
+                            android:id="@+id/out_locationsTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/bill_nosTV"
+                            android:layout_marginTop="@dimen/dimen_10"
+                            android:text="@string/out_location"
+                            android:textSize="@dimen/text_size_large" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_30"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/out_timeTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dimen_10"
+                            android:text="@string/out_time"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <TextView
+                            android:id="@+id/out_locationTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/dimen_10"
+                            android:layout_marginRight="@dimen/dimen_10"
+                            android:text="@string/out_location"
+                            android:textSize="@dimen/text_size_large" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:layout_width="@dimen/dimen_200"
+            android:layout_height="wrap_content"
+            android:id="@+id/punch_attandanceBtn"
+            android:text="Punch"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@color/purple"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_10"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

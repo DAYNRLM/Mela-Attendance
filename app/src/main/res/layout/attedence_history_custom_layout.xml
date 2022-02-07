@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAttedenceHistoryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATE"
+                android:textSize="@dimen/textSize18"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_5"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/dimen_100"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shg_name"
+                    android:textSize="@dimen/textSize18"
+                    android:padding="@dimen/space1dp"
+                    android:layout_marginLeft="@dimen/dimen_10"/>
+                <TextView
+                    android:id="@+id/tvAttedenceHistoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XXXXXXXX"
+                    android:textSize="@dimen/textSize18"
+                    android:padding="@dimen/space1dp"
+                    android:layout_marginLeft="@dimen/dimen_10"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/dimen_100"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_number"
+                    android:textSize="@dimen/textSize18"
+                    android:padding="@dimen/space1dp"
+                    android:layout_marginLeft="@dimen/dimen_10"/>
+                <TextView
+                    android:id="@+id/tvAttedenceHistoryMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XXXXXXXX"
+                    android:textSize="@dimen/textSize18"
+                    android:padding="@dimen/space1dp"
+                    android:layout_marginLeft="@dimen/dimen_10"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

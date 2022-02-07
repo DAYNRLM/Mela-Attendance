@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+       android:padding="@dimen/space5dp"
+        android:orientation="vertical"
+       >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saras/Aajeevika"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:textColor="@color/purple"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:src="@drawable/aajeevika"
+
+            android:padding="@dimen/space10dp"/>
+        <!--<com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space5dp"
+            android:padding="@dimen/space5dp"
+            android:background="@drawable/border"
+            android:hint="Enter Your Mobile number">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registn_num"
+                android:layout_margin="@dimen/space5dp"
+                android:lines="1"
+                android:maxLength="10"
+                android:textColor="@color/color_000"
+                android:textColorHint="@color/color_1E50E9"
+                android:textSize="@dimen/textSize18"
+                android:longClickable="false"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobulInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space5dp"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:layout_marginRight="@dimen/space5dp"
+                android:hint="Enter your mobile number"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registn_num"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/color_1E50E9"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+   <!--     <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space5dp"
+            android:padding="@dimen/space5dp"
+            android:background="@drawable/border"
+            android:hint="Enter Your Password"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space30dp"
+                android:id="@+id/passwrd"
+                android:layout_margin="@dimen/space5dp"
+                android:lines="1"
+                android:maxLength="16"
+                android:textColor="@color/color_000"
+                android:visibility="visible"
+                android:textSize="@dimen/textSize18"
+                android:longClickable="false"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space5dp"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:layout_marginRight="@dimen/space5dp"
+                app:passwordToggleEnabled="true"
+                android:hint="Enter your password"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/passwrd"
+                    android:lines="1"
+                    android:maxLength="6"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/color_1E50E9"
+                    android:inputType="numberPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:text="login"
+            android:padding="@dimen/space5dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/space20dp"
+            android:layout_marginLeft="@dimen/space5dp"
+            android:layout_marginRight="@dimen/space5dp"
+            android:background="@color/purple"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotPasswordTv"
+            android:text="Forgot password?"
+            android:textSize="@dimen/textSize15"
+            android:textColor="@color/color_000"
+            android:gravity="right"
+            android:layout_marginTop="@dimen/space20dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottemLinearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+        <include layout="@layout/footer_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

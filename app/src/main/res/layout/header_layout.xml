@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/purple">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUserName1"
+        android:visibility="gone"
+        style="@style/tv_style"
+        android:layout_above="@+id/tvUserMobile2"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/space15dp"
+        android:layout_marginTop="@dimen/space10dp"
+        android:textSize="@dimen/textSize20"
+        android:filterTouchesWhenObscured="true"
+        android:textStyle="bold"
+        android:gravity="start"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUserMobile2"
+        style="@style/tv_style"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/space15dp"
+        android:layout_marginTop="@dimen/space10dp"
+        android:textSize="@dimen/textSize15"
+        android:layout_above="@+id/tvVersion"
+        android:gravity="start"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvVersion"
+        style="@style/tv_style"
+        android:text="Version 1.0.6"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/space15dp"
+        android:layout_marginTop="@dimen/space10dp"
+        android:textSize="10sp"
+        android:gravity="start"/>
+
+</RelativeLayout>
